@@ -1,0 +1,14 @@
+expression ServerName = "3o2azv6enfeuvkxt6ht2yj3wqy-rqcv5zfkli7evjuqw52zobn7jm.datawarehouse.fabric.microsoft.com" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: 948d86fa-7918-492c-bc7b-55dbf667b205
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression DatabaseName = "sample" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: 283f57f9-f187-46f1-a4df-7ee92b6f150b
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
