@@ -1,0 +1,13 @@
+relationship f18ab42a-6adb-39d3-6189-48e4f3d6ad6e
+	fromColumn: dimension_customer.LineageKey
+	toColumn: dimension_city.CityKey
+
+relationship 7214820f-8e3b-b5c5-69d0-20c690d817ae
+	fromColumn: dimension_customer.LineageKey
+	toColumn: dimension_employee.EmployeeKey
+
+relationship 6ad4fdb8-4b4a-5061-5587-fb273f048c16
+	isActive: false
+	fromColumn: dimension_city.CityKey
+	toColumn: dimension_customer.CustomerKey
+

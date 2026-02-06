@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Organizational data Bi Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "90986ec8-6500-8f2c-486d-7be6abbc1a1a"
+  }
+}

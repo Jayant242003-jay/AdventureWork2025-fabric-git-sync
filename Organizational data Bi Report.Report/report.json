@@ -1,0 +1,99 @@
+{
+  "config": "{\"version\":\"5.69\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU12\",\"type\":2,\"version\":{\"visual\":\"2.5.0\",\"report\":\"3.1.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "advanceCardE03760C5AB684758B56AA29F9E6C257B"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU12",
+            "path": "BaseThemes/CY25SU12.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "0328ebdb31a806b95ce1",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"15693a0ee67154105f82\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.42857142857143,\"y\":420,\"z\":1000,\"width\":487.14285714285717,\"height\":275.7142857142857,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dimension_employee.IsSalesperson\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dimension_employee.EmployeeKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimension_employee\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"IsSalesperson\"},\"Name\":\"dimension_employee.IsSalesperson\",\"NativeReferenceName\":\"IsSalesperson\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"EmployeeKey\"}},\"Function\":5},\"Name\":\"CountNonNull(dimension_employee.EmployeeKey)\",\"NativeReferenceName\":\"Count of EmployeeKey\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"EmployeeKey\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Employee Distribution'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 275.71,
+          "width": 487.14,
+          "x": 21.43,
+          "y": 420.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"30637eaf5225eaa779ae\",\"layouts\":[{\"id\":0,\"position\":{\"x\":927.1428571428572,\"y\":152.85714285714286,\"z\":5000,\"width\":344.28571428571433,\"height\":248.57142857142858,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dimension_employee.ValidFrom\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dimension_employee.EmployeeKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimension_employee\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ValidFrom\"},\"Name\":\"dimension_employee.ValidFrom\",\"NativeReferenceName\":\"ValidFrom\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"EmployeeKey\"}},\"Function\":5},\"Name\":\"CountNonNull(dimension_employee.EmployeeKey)\",\"NativeReferenceName\":\"Count of EmployeeKey\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ValidFrom\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Employees by Joining Year'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 248.57,
+          "width": 344.29,
+          "x": 927.14,
+          "y": 152.86,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"53d98a0f209da0b3f2bd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":534.2857142857143,\"y\":420,\"z\":3000,\"width\":737.1428571428572,\"height\":275.7142857142857,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dimension_city.City\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dimension_city.LatestRecordedPopulation)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimension_city\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"City\"},\"Name\":\"dimension_city.City\",\"NativeReferenceName\":\"City\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LatestRecordedPopulation\"}},\"Function\":5},\"Name\":\"CountNonNull(dimension_city.LatestRecordedPopulation)\",\"NativeReferenceName\":\"Count of LatestRecordedPopulation\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LatestRecordedPopulation\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Most Populated Cities'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 275.71,
+          "width": 737.14,
+          "x": 534.29,
+          "y": 420.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8824f78b6b016dfb1c0c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.42857142857143,\"y\":152.85714285714286,\"z\":2000,\"width\":365.7142857142857,\"height\":248.57142857142858,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(dimension_date.CalendarYear)\"},{\"queryRef\":\"dimension_date.Month\"},{\"queryRef\":\"dimension_date.Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimension_date\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"CalendarYear\"}},\"Function\":0},\"Name\":\"Sum(dimension_date.CalendarYear)\",\"NativeReferenceName\":\"Sum of CalendarYear\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Month\"},\"Name\":\"dimension_date.Month\",\"NativeReferenceName\":\"Month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"dimension_date.Date\",\"NativeReferenceName\":\"Date\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Calendar Reference'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 248.57,
+          "width": 365.71,
+          "x": 21.43,
+          "y": 152.86,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"90c103c70d13e2913ef6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":412.8571428571429,\"y\":152.85714285714286,\"z\":4000,\"width\":490.00000000000006,\"height\":248.57142857142858,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dimension_customer.BuyingGroup\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dimension_customer.CustomerKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimension_customer\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BuyingGroup\"},\"Name\":\"dimension_customer.BuyingGroup\",\"NativeReferenceName\":\"BuyingGroup\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"CustomerKey\"}},\"Function\":5},\"Name\":\"CountNonNull(dimension_customer.CustomerKey)\",\"NativeReferenceName\":\"Count of CustomerKey\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"CustomerKey\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Customer Distribution by Buying Group'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 248.57,
+          "width": 490.00,
+          "x": 412.86,
+          "y": 152.86,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"c6ed855354698856272a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.42857142857143,\"y\":24.28571428571429,\"z\":6000,\"width\":524.2857142857143,\"height\":75.71428571428572,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Organizational Data Overview\",\"textStyle\":{\"fontFamily\":\"Segoe UI Semibold\",\"fontSize\":\"28pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 75.71,
+          "width": 524.29,
+          "x": 21.43,
+          "y": 24.29,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"eb4bc5079dffc8a331d6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1068.5714285714287,\"y\":24.28571428571429,\"z\":0,\"width\":202.85714285714286,\"height\":101.42857142857143,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"advanceCardE03760C5AB684758B56AA29F9E6C257B\",\"projections\":{\"mainMeasure\":[{\"queryRef\":\"CountNonNull(dimension_customer.CustomerKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimension_customer\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"CustomerKey\"}},\"Function\":5},\"Name\":\"CountNonNull(dimension_customer.CustomerKey)\",\"NativeReferenceName\":\"Count of CustomerKey\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"CustomerKey\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabelSettings\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Customers'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 101.43,
+          "width": 202.86,
+          "x": 1068.57,
+          "y": 24.29,
+          "z": 0.00
+        }
+      ],
+      "width": 1290.00
+    }
+  ]
+}
